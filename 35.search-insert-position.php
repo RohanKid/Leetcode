@@ -13,11 +13,6 @@ class Solution {
      * @return Integer
      */
     function searchInsert($nums, $target) {
-        if ($target < $nums[0]) {
-            return 0;
-        } elseif ($target > $nums[count($nums)-1]) {
-            return count($nums);
-        }
 
         $left = 0;
         $right = count($nums);
