@@ -17,12 +17,12 @@ class Solution {
         for($i=0;$i<$count;$i++){
                 $secondIndex = $target-$nums[$i];
                 if(isset($hashMap[$secondIndex])){
-                    return array($i,$hashMap[$secondIndex]);
+                    return array($hashMap[$secondIndex],$i);
                 }else{
                     $hashMap[$nums[$i]]=$i;
                 }
         }
-        return [];
+        return[];
     }
 }
 // @lc code=end
